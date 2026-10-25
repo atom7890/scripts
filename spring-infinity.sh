@@ -8,7 +8,7 @@ git clone -b infinity-17 https://github.com/atom7890/android_device_xiaomi_sprin
 
 echo "Kernel (prebuilt)"
 rm -rf device/xiaomi/spring-kernel;
-git clone -b lineage-24.0 https://gitlab.com/Niyush-04/android_device_xiaomi_spring-kernel device/xiaomi/spring-kernel
+git clone -b lineage-24.0 https://gitlab.com/Niyush-04/android_device_xiaomi_spring-kernel.git device/xiaomi/spring-kernel
 
 echo "Vendor"
 rm -rf vendor/xiaomi/spring;
@@ -55,7 +55,7 @@ rm -rf packages/apps/Updater;
 git clone -b 17 https://github.com/atom7890/packages_apps_Updater.git packages/apps/Updater
 
 
-echo "Dolby Support"
+echo "Cloning Dolby Support"
 
 echo "Dolby Hardware"
 rm -rf hardware/dolby;
@@ -64,6 +64,13 @@ git clone -b sony-A17 https://github.com/swiitch-OFF-Lab/hardware_dolby.git hard
 echo "DolbyUi"
 rm -rf packages/apps/DolbyUI;
 git clone -b 16.0 https://github.com/swiitch-OFF-Lab/packages_apps_DolbyUI.git packages/apps/DolbyUi
+
+echo "Cloning infinity private keys"
+
+echo "vendor_infinity-priv_keys"
+rm -rf vendor/infinity-priv/keys
+git clone https://github.com/atom7890/vendor_infinity-priv_keys.git vendor/infinity-priv/keys
+
 
 echo "Setup environment!..."
 source build/envsetup.sh
