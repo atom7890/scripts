@@ -4,7 +4,7 @@ echo "Cloning Device Resources"
 
 echo "Device Tree"
 rm -rf device/xiaomi/spring;
-git clone -b infinity-17 https://github.com/atom7890/android_device_xiaomi_spring.git device/xiaomi/spring
+git clone -b infinity-17 https://github.com/atom7890/android_device_xiaomi_spring_infinity-x.git device/xiaomi/spring
 
 echo "Kernel (prebuilt)"
 rm -rf device/xiaomi/spring-kernel;
@@ -63,7 +63,7 @@ git clone -b sony-A17 https://github.com/swiitch-OFF-Lab/hardware_dolby.git hard
 
 echo "DolbyUi"
 rm -rf packages/apps/DolbyUI;
-git clone -b 16.0 https://github.com/swiitch-OFF-Lab/packages_apps_DolbyUI.git packages/apps/DolbyUi
+git clone -b 16.0 https://github.com/swiitch-OFF-Lab/packages_apps_DolbyUI.git packages/apps/DolbyUI
 
 echo "Cloning infinity private keys"
 
